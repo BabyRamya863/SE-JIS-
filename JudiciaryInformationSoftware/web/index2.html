@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function validate()
+            {
+                var name=document.myform.username.value;
+                var pass=document.myform.password.value();
+                if(name==null||name=="")
+                {
+                    alert("Name cannot be blank");
+                    return false;
+                }
+            </script>
+    </head>
+    <body>
+         <div align="center">
+            <h1>REGISTRATION FORM</h1>
+            <form action="registrar" method="POST" name="myform" onsubmit="return validate()">
+            Name:<input type="text" name="id" value="" placeholder="please enter ur name"><br><br>
+            Phone number:<input type="tel" name="mobilenumber" placeholder="+91...." value=""><br><br>
+            gender:
+            <input type="radio" name="gender" value="female">
+             <label for="male">female</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">male</label><br><br>
+                    address
+                    <textarea rows="4" cols="15"></textarea><br><br>
+                    email:<input type="text" name="email" placeholder="enter ur email"><br><br>
+                    Username<input type="text" name="username" placeholder="create username"><br><br>
+                    Password<input type="password" name="password" pattern="[A-Za-z0-9]+" title="Must Contain Atleast one number,one uppercase,one lowercase" required> ><br><br>
+                    
+                   confirm Password<input type="password" name="password" value=""><br><br>
+                   category<input type="text" placeholder="defendant" name="category" value=""><br>
+                    
+                    
+                    
+                    
+                   
+                    
+                     
+            
+            <input type="submit" value="submit">
+        </form>
+            </div>
+    </body>
+</html>
